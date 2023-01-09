@@ -3,8 +3,8 @@
 const eshopEl = document.getElementById('eshopImg');
 const auctionEl = document.getElementById('auctionImg');
 
-const eshopImages = ['../images/eshop/eshop.png', '../images/eshop/eshop2.png', '../images/eshop/eshop3.jpg'];
-const auctionImages = ['../images/auction/auction.png', '../images/auction/auction2.png', '../images/auction/auction3.png', '../images/auction/auction4.png'];
+const eshopImages = ['./images/eshop/eshop.png', './images/eshop/eshop2.png', './images/eshop/eshop3.jpg'];
+const auctionImages = ['./images/auction/auction.png', './images/auction/auction2.png', './images/auction/auction3.png', './images/auction/auction4.png'];
 
 function updateImage(el, arr) {
 
