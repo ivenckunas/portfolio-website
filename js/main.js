@@ -1,5 +1,7 @@
 'use strict'
 
+// image carousell
+
 const eshopEl = document.getElementById('eshopImg');
 const auctionEl = document.getElementById('auctionImg');
 
@@ -34,3 +36,18 @@ setTimeout(function () {
   updateImage(auctionEl, auctionImages);
 }, 3000);
 
+// scroll animation
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+
+    }
+  })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el)) 
