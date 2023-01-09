@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js" type="module" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <img class="logo" src="./images/nav/logoiv.png" alt="">
+      <div class="contact-socials">
+        <a href="https://github.com/ivenckunas" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ignas-venckunas/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#contact">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header>
+      <div class="header-info">
+        <h1>Nice to meet you! <br> I'm Ignas Venckunas.</h1>
+        <p>I'm a front-end web developer based in Vilnius, Lithuania.
+        </p>
+      </div>
+    </header>
+    <hr>
+    <!-- Skills -->
+    <section class="section-skills">
+      <ul>
+
+        <li>
+          <i class="fa-brands fa-html5"></i>
+          <p>HTML</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-css3-alt"></i>
+          <p>CSS</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-js"></i>
+          <p>JavaSript</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-node-js"></i>
+          <p>NodeJs</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-react"></i>
+          <p>React</p>
+        </li>
+        <li>
+          <img class="mongo-logo" src="./images/mongo.png" alt="mongoDB logo">
+          <p>MongoDB</p>
+        </li>
+
+      </ul>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="section-projects">
+      <h2>Projects</h2>
+      <div class="projects-cards">
+        <!-- hot sauce eshop -->
+        <a href="https://github.com/ivenckunas/final-project-client-side" target="_blank">
+          <div class="project-card">
+            <img id="eshopImg" src="./images/eshop/eshop.png" alt="">
+            <h4>E-shop</h4>
+            <p>HTML CSS ReactJs NodeJs Socket.IO </p>
+          </div>
+        </a>
+        <!-- auction site -->
+        <a href="https://github.com/ivenckunas/reactjs-auction-app-client-side" target="_blank">
+          <div class="project-card">
+            <img id="auctionImg" src="./images/auction/auction.png" alt="">
+            <h4>Auction</h4>
+            <p>HTML CSS ReactJs NodeJs</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Contacts -->
+
+    <h2>Contact</h2>
+
+
+    <!-- Contact Form -->
+    <form id="contact" class="contact-form" action="https://formspree.io/f/xoqrzvdp" method="POST">
+      <label for="name">name
+        <input id="name" name="name" required type="text">
+      </label>
+      <label for="email">email
+        <input id="email" name="email" required type="text">
+      </label>
+      <label for="message">message
+        <textarea id="message" required name="message" id="" cols="1" rows="1"></textarea>
+      </label>
+      <button type="submit">send message</button>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #131316;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  background-image: url(../images/body/graphic.png);
+  background-repeat: no-repeat;
+  background-position: 900px 250px;
+  background-size: 600px;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+hr {
+  background-color: #fff;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+nav img {
+  height: 70px;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-socials i {
+  font-size: 2rem;
+  transition: 0.2s;
+}
+
+.contact-socials i:hover {
+  color: hsl(0, 0%, 90%);
+  transform: translateY(-1px);
+}
+
+/* header */
+
+header {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+/* section skills */
+
+.section-skills {
+  padding-bottom: 3rem;
+}
+
+.section-skills ul {
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-skills ul li {
+  padding: 1rem;
+  text-align: center;
+}
+
+.section-skills ul li i {
+  font-size: 2rem;
+}
+
+.mongo-logo {
+  height: 37px;
+}
+
+/* section projects */
+
+h2 {
+  font-size: 3rem;
+}
+
+.projects-cards {
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+
+/* project card */
+
+.project-card {
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.project-card:hover {
+  opacity: 0.5;
+}
+
+.project-card h4 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.project-card img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+/* contact */
+
+.section-contact {
+  padding: 2rem 0 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-contact h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.section-contact i {
+  font-size: 2rem;
+}
+
+.section-contact i:hover {
+  color: hsl(0, 0%, 80%);
+}
+
+/* form */
+
+.contact-form {
+  padding-bottom: 4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid white;
+  color: white;
+  padding-left: 0;
+  resize: none;
+}
+
+.contact-form textarea {
+  min-height: 1.5rem;
+  min-width: 300px;
+  padding-bottom: 1rem;
+}
+
+/* buttons */
+
+button {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1rem;
+  color: white;
+  transition: 0.2s;
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e6e6e6 0 -3px 0 inset;
+}
+
+button:focus {
+  box-shadow: #e6e6e6 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e6e6e6 0 -3px 0 inset;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  box-shadow: #e6e6e6 -1px -1px 2px inset;
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 480px) {
+
+  body {
+    background-size: 350px;
+    background-position: 300px 240px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .projects-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form,
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form label {
+    margin-top: 0.5rem;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 1rem;
+  }
+}
