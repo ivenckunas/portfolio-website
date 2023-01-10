@@ -236,7 +236,7 @@ button:active {
   transform: translateY(2px);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 648px) {
 
   body {
     background-size: 350px;
