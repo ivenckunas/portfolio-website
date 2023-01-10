@@ -8,7 +8,7 @@ const chatEl = document.getElementById('chatImg');
 
 const eshopImages = ['./images/eshop/eshop.png', './images/eshop/eshop2.png', './images/eshop/eshop3.jpg'];
 const auctionImages = ['./images/auction/auction.png', './images/auction/auction2.png', './images/auction/auction3.png', './images/auction/auction4.png'];
-const chatImages = ['./images/livechat/chatlogin.png', './images/livechat/chatroom.png', './images/livechat/chatwindow1.png', './images/livechat/chatwindow2.png'];
+const chatImages = ['./images/livechat/chatlogin.png', './images/livechat/chatroom.png', './images/livechat/chatwindow1.png'];
 
 function updateImage(el, arr) {
 
